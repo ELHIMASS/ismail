@@ -175,7 +175,35 @@ header .navbar ul li a:hover {
   header .navbar.nav-toggle {
     right: 0;
   }
+  .home .image {
+    position: absolute;
+    top: 120px; /* Ajuste la position */
+    left: 80%;
+    transform: translateX(-50%);
+    width: 120px; /* Ajuste la taille selon le besoin */
+    height: 120px;
+    border-radius: 50%; /* Pour un effet arrondi */
+    z-index: 10; /* S'assure que l'image est au-dessus des autres éléments */
+    display: flex;
+  justify-content: center;
+  
+    
 }
+
+.home .image img {
+  
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  border-radius: 50%;
+  border: 5px solid white; /* Bordure propre */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre fluide */
+  position: relative;
+  z-index: 2;
+  margin-top: -12rem;
+}
+}
+
 /* hamburger icon ends */
 
 /* hero section starts*/
@@ -208,15 +236,21 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
-  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
+  
+  width: 250px;
+  height: 250px;
+  top: -70px;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  border: 5px solid white; /* Bordure propre */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre fluide */
+  position: relative;
+  z-index: 2;
 }
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -331,15 +365,47 @@ header .navbar ul li a:hover {
   .socials {
     margin-top: 12rem;
   }
-  .home .image img {
-    margin-top: -12rem;
-  }
+  
   .home .content p {
     font-size: 2.2rem;
   }
   .home .content p span {
     font-size: 2.2rem;
   }
+
+  .home .image {
+    position: absolute;
+    top: 120px; /* Ajuste la position */
+    left: 80%;
+    transform: translateX(-50%);
+    width: 90px; /* Ajuste la taille selon le besoin */
+    height: 90px;
+    border-radius: 50%; /* Pour un effet arrondi */
+    z-index: 10; /* S'assure que l'image est au-dessus des autres éléments */
+    display: flex;
+  justify-content: center;
+  
+    
+}
+
+.home .image img {
+  
+  width: 150px;
+  height: 150px;
+  top: 100px;
+  border-radius: 50%;
+  border: 5px solid white; /* Bordure propre */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre fluide */
+  position: relative;
+  z-index: 2;
+  margin-top: -12rem;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+  font-size: 20px;
+}
 }
 /* hero media queries ends*/
 /* hero section end */
