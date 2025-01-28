@@ -17,6 +17,14 @@ $(document).ready(function () {
     });
 });
 
+projects.forEach(project => {
+    let img = new Image();
+    img.src = `/assets/images/projects/${project.image}.png`;
+    img.onload = function() { console.log("Image chargée :", img.src); };
+    img.onerror = function() { console.error("Image introuvable :", img.src); };
+});
+
+
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
@@ -44,10 +52,10 @@ function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
     projects.forEach(project => {
-        projectsHTML += `
+        projectsHTML += ` 
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="./assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
